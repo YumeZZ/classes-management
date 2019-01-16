@@ -1,0 +1,8 @@
+*.exe
+*.a.out
+*.out
+*.o
+*.class
+*.txt
+Thumbs.db
+.DS_Store
