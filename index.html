@@ -2,9 +2,49 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Hi，GitHub</title>
+    <title>暨大教室借閱</title>
+    <link rel="icon" href="icon/ncnu_LOGO.png"  type="image/png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   </head>
-  <body>
-    <h1>(･ω･)</h1>
+  <body class="layout-light">
+    <nav style="box-shadow:none;">
+      <div class="nav-content">
+        <a id="logo-container" href="#" class="brand-logo" style="letter-spacing:2px;"><img class="icon" src="icon/ncnu_LOGO.png" style="width:40px; vertical-align:middle; margin:0px 15px;">暨大借閱管理</a>
+        <ul class="tabs tabs-transparent " style="padding-top: 12px;">
+          <li class="tab"><a href="#1">教室管理</a></li>
+          <li class="tab"><a href="#2">物品管理</a></li>
+          <li class="tab"><a href="#3">權限管理</a></li>
+          <li class="tab"><a href="#4">帳號管理</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="sidenav sidenav-fixed">
+          <li><a href="Management.html" target="college"><img class="nav_icon" src="icon/ncnu_LOGO.png">管理學院</a></li>
+          <li><a href="Humanities.html" target="college"><img class="nav_icon" src="icon/ncnu_LOGO.png" >人文學院</a></li>
+          <li><a href="Education.html" target="college"><img class="nav_icon" src="icon/ncnu_LOGO.png">教育學院</a></li>
+          <li><a href="ScienceAndTechnology.html" target="college"><img class="nav_icon" src="icon/ncnu_LOGO.png" >科技學院</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- <ul class="sidenav" id="mobile-demo">
+      <li><a href="sass.html">管理學院</a></li>
+      <li><a href="badges.html">人文學院</a></li>
+      <li><a href="collapsible.html">教育學院</a></li>
+      <li><a href="#">科技學院</a></li>
+    </ul> -->
+    
+    <div class="container">
+      <!-- <iframe src="https://materializecss.com/pagination.html#!" class="w3-round" style="width:95%; border:5px solid #e9e9e9; height:80%;" scrolling="yes"></iframe> -->
+      <iframe id="college" name="college" src="Management.html" class="w3-round" style="width:90%; border:4px solid #e9e9e9; border-radius:15px; height:80%; margin: 0px 10px 0px 50px;" scrolling="yes"></iframe>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
   </body>
 </html>
